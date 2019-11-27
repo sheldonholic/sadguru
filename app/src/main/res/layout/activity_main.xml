@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/hi"
+    android:backgroundTintMode="add">
+
+    <TextView
+        android:id="@+id/Sadguru"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sadguru's"
+        android:textStyle="bold"
+        android:fontFamily="cursive"
+        android:textColor="#fff"
+        android:textSize="50dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/veg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Sadguru"
+        android:text="Veg Diet"
+        android:fontFamily="cursive"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:textColor="#FF9800"
+        />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get Started"
+
+        android:onClick="Menu"
+        android:background="@drawable/circle"
+        android:layout_below="@+id/veg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:padding="20dp"
+        />
+</RelativeLayout>
